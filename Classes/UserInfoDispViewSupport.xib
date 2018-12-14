@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+            <string>Helvetica-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserInfoDispViewSupport">
+            <connections>
+                <outlet property="btnPictView" destination="76" id="77"/>
+                <outlet property="imgViewPicture" destination="65" id="66"/>
+                <outlet property="lblBirthday" destination="56" id="67"/>
+                <outlet property="lblBloadType" destination="58" id="68"/>
+                <outlet property="lblBloadTypeTitle" destination="57" id="88"/>
+                <outlet property="lblLastWorkDate" destination="54" id="70"/>
+                <outlet property="lblName" destination="64" id="71"/>
+                <outlet property="lblSex" destination="63" id="72"/>
+                <outlet property="lblSyumi" destination="60" id="73"/>
+                <outlet property="txtViewMemo" destination="35" id="74"/>
+                <outlet property="userRegistNumber" destination="81" id="82"/>
+                <outlet property="userRegistNumberTitle" destination="80" id="83"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1" userLabel="View">
+            <rect key="frame" x="0.0" y="0.0" width="932" height="214"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35">
+                    <rect key="frame" x="495" y="89" width="427" height="115"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                </textView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="様" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51">
+                    <rect key="frame" x="475" y="14" width="24.5" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="最新来店日" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52">
+                    <rect key="frame" x="265" y="149" width="60" height="14"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="性別" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53">
+                    <rect key="frame" x="265" y="77" width="24" height="14"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2010年10月22日　金曜日" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="54">
+                    <rect key="frame" x="335" y="149.5" width="150" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="XDT-qr-Bug"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="生年月日" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55">
+                    <rect key="frame" x="265" y="101" width="48" height="14"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="昭和40年05月12日" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="56">
+                    <rect key="frame" x="335" y="101.5" width="150" height="14"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="血液型" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57">
+                    <rect key="frame" x="265" y="125" width="36" height="14"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="趣味" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59">
+                    <rect key="frame" x="265" y="173" width="24" height="14"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="音楽鑑賞、バイク" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="60">
+                    <rect key="frame" x="335" y="173" width="150" height="14"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="日本　花子" lineBreakMode="tailTruncation" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="64">
+                    <rect key="frame" x="265" y="14.5" width="200" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Jc1-t5-bQl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="お客様番号" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80">
+                    <rect key="frame" x="265" y="52.5" width="60" height="14"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="01234567" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="81">
+                    <rect key="frame" x="335" y="53" width="150" height="14"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="65">
+                    <rect key="frame" x="10" y="14.5" width="245" height="185"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="185" id="fci-mb-Cux"/>
+                        <constraint firstAttribute="width" constant="245" id="frS-lI-J6J"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" tag="257" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76" customClass="UIFlickerButton">
+                    <rect key="frame" x="10" y="14.5" width="245" height="185"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="185" id="HQz-KO-EIJ"/>
+                        <constraint firstAttribute="width" constant="245" id="pf9-GG-JsI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X15-QK-gex">
+                    <rect key="frame" x="877" y="14" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="WUD-1s-9Og"/>
+                        <constraint firstAttribute="width" constant="45" id="qjV-uR-Sbr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                    <state key="normal" backgroundImage="btnSecretMemoIcon.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" backgroundImage="button_Blank_Blue_Push.png"/>
+                    <state key="highlighted" backgroundImage="button_Blank_Blue_Push.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="OnSecretManager:" destination="-1" eventType="touchUpInside" id="JgD-mC-P0y"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="B 型" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="58">
+                    <rect key="frame" x="335" y="125" width="150" height="14"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="女" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="63">
+                    <rect key="frame" x="335" y="77" width="150" height="14"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqu-U7-a4b">
+                    <rect key="frame" x="802" y="14" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="5bI-KG-cqc"/>
+                        <constraint firstAttribute="height" constant="45" id="Lqp-J5-MEm"/>
+                    </constraints>
+                    <state key="normal" image="customer_preview.png"/>
+                    <connections>
+                        <action selector="onCustomerPreview:" destination="-1" eventType="touchUpInside" id="MUK-3r-sgR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="76" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="05H-aQ-8FR"/>
+                <constraint firstItem="53" firstAttribute="top" secondItem="80" secondAttribute="bottom" constant="10" id="0GM-V1-UGA"/>
+                <constraint firstItem="51" firstAttribute="leading" secondItem="64" secondAttribute="trailing" constant="10" id="3GG-HK-mAt"/>
+                <constraint firstItem="80" firstAttribute="leading" secondItem="64" secondAttribute="leading" id="7n0-wq-7jb"/>
+                <constraint firstItem="35" firstAttribute="top" secondItem="X15-QK-gex" secondAttribute="bottom" constant="30" id="8OG-L6-oNG"/>
+                <constraint firstItem="59" firstAttribute="top" secondItem="52" secondAttribute="bottom" constant="10" id="9BF-yA-K3S"/>
+                <constraint firstItem="81" firstAttribute="leading" secondItem="54" secondAttribute="leading" id="Axi-yd-gvA"/>
+                <constraint firstItem="zqu-U7-a4b" firstAttribute="top" secondItem="X15-QK-gex" secondAttribute="top" id="BKN-ea-eUu"/>
+                <constraint firstItem="60" firstAttribute="leading" secondItem="54" secondAttribute="leading" id="Be2-kA-8W2"/>
+                <constraint firstItem="53" firstAttribute="leading" secondItem="64" secondAttribute="leading" id="CG7-0N-flr"/>
+                <constraint firstItem="56" firstAttribute="centerY" secondItem="55" secondAttribute="centerY" id="COm-lb-AYg"/>
+                <constraint firstItem="63" firstAttribute="leading" secondItem="54" secondAttribute="leading" id="D1D-Yj-6gF"/>
+                <constraint firstItem="X15-QK-gex" firstAttribute="leading" secondItem="zqu-U7-a4b" secondAttribute="trailing" constant="30" id="G6Q-QW-VtG"/>
+                <constraint firstItem="65" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="Kmt-dA-KmY"/>
+                <constraint firstItem="55" firstAttribute="top" secondItem="53" secondAttribute="bottom" constant="10" id="LrK-Vt-gTe"/>
+                <constraint firstItem="35" firstAttribute="trailing" secondItem="X15-QK-gex" secondAttribute="trailing" id="PYx-xX-34H"/>
+                <constraint firstAttribute="trailing" secondItem="X15-QK-gex" secondAttribute="trailing" constant="10" id="QHC-E9-4yQ"/>
+                <constraint firstItem="58" firstAttribute="centerY" secondItem="57" secondAttribute="centerY" id="SSv-MP-5cL"/>
+                <constraint firstAttribute="bottom" secondItem="35" secondAttribute="bottom" constant="10" id="ViW-cc-lms"/>
+                <constraint firstItem="51" firstAttribute="centerY" secondItem="64" secondAttribute="centerY" id="Ww9-Zx-hCf"/>
+                <constraint firstItem="63" firstAttribute="trailing" secondItem="54" secondAttribute="trailing" id="Xco-TM-KFU"/>
+                <constraint firstItem="55" firstAttribute="leading" secondItem="64" secondAttribute="leading" id="YzC-Qc-rMj"/>
+                <constraint firstItem="63" firstAttribute="centerY" secondItem="53" secondAttribute="centerY" id="aJF-qw-jp5"/>
+                <constraint firstItem="52" firstAttribute="leading" secondItem="80" secondAttribute="leading" id="aRJ-OS-3x1"/>
+                <constraint firstItem="X15-QK-gex" firstAttribute="top" secondItem="64" secondAttribute="top" id="bCB-vy-KeZ"/>
+                <constraint firstItem="65" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="10" id="bfe-Qw-1vL"/>
+                <constraint firstItem="81" firstAttribute="trailing" secondItem="54" secondAttribute="trailing" id="e9z-92-8jx"/>
+                <constraint firstItem="57" firstAttribute="top" secondItem="55" secondAttribute="bottom" constant="10" id="eve-fZ-Fjk"/>
+                <constraint firstItem="56" firstAttribute="leading" secondItem="54" secondAttribute="leading" id="ey6-uV-fHs"/>
+                <constraint firstItem="54" firstAttribute="leading" secondItem="52" secondAttribute="trailing" constant="10" id="f04-IB-Zwo"/>
+                <constraint firstItem="56" firstAttribute="trailing" secondItem="54" secondAttribute="trailing" id="fDe-sj-4qy"/>
+                <constraint firstItem="76" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="10" id="gRb-B3-d6S"/>
+                <constraint firstItem="60" firstAttribute="centerY" secondItem="59" secondAttribute="centerY" id="iDL-as-bNa"/>
+                <constraint firstItem="81" firstAttribute="centerY" secondItem="80" secondAttribute="centerY" id="jL6-o4-76u"/>
+                <constraint firstItem="54" firstAttribute="centerY" secondItem="52" secondAttribute="centerY" id="kSm-Fn-ofn"/>
+                <constraint firstItem="59" firstAttribute="leading" secondItem="64" secondAttribute="leading" id="l3O-ni-HV3"/>
+                <constraint firstItem="57" firstAttribute="leading" secondItem="64" secondAttribute="leading" id="n2l-VG-MIw"/>
+                <constraint firstItem="64" firstAttribute="top" secondItem="76" secondAttribute="top" id="oVg-OL-bah"/>
+                <constraint firstItem="58" firstAttribute="leading" secondItem="54" secondAttribute="leading" id="rPJ-2p-wAU"/>
+                <constraint firstItem="64" firstAttribute="leading" secondItem="76" secondAttribute="trailing" constant="10" id="sCG-7P-T9s"/>
+                <constraint firstItem="35" firstAttribute="leading" secondItem="54" secondAttribute="trailing" constant="10" id="srD-VX-ApX"/>
+                <constraint firstItem="80" firstAttribute="top" secondItem="64" secondAttribute="bottom" constant="10" id="t1x-4h-EHt"/>
+                <constraint firstItem="52" firstAttribute="top" secondItem="57" secondAttribute="bottom" constant="10" id="uiU-gI-wLz"/>
+                <constraint firstItem="60" firstAttribute="trailing" secondItem="54" secondAttribute="trailing" id="yGE-iO-vGc"/>
+                <constraint firstItem="58" firstAttribute="trailing" secondItem="54" secondAttribute="trailing" id="yiW-Mv-v0b"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="258" y="5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btnSecretMemoIcon.png" width="1437" height="1430"/>
+        <image name="button_Blank_Blue_Push.png" width="115" height="42"/>
+        <image name="customer_preview.png" width="423" height="458"/>
+    </resources>
+</document>

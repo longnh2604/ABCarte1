@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HistListViewController">
+            <connections>
+                <outlet property="btnCameraView" destination="23" id="27"/>
+                <outlet property="btnHistDetailView" destination="24" id="28"/>
+                <outlet property="btnKarteDelete" destination="16" id="30"/>
+                <outlet property="btnNewkarteMake" destination="15" id="31"/>
+                <outlet property="btnPictureListView" destination="21" id="29"/>
+                <outlet property="btnQRCode" destination="lcx-3j-Tix" id="5S8-Ks-Pa7"/>
+                <outlet property="btnUserListView" destination="6" id="8"/>
+                <outlet property="btnWebMail" destination="70" id="72"/>
+                <outlet property="tlbMain" destination="14" id="68"/>
+                <outlet property="tlbSecurity" destination="37" id="47"/>
+                <outlet property="tvHistList" destination="10" id="13"/>
+                <outlet property="userStatusLabel" destination="52" id="ivu-Qp-jOs"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="5">
+                    <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem width="16" style="plain" systemItem="fixedSpace" id="7"/>
+                        <barButtonItem title="お客様一覧に戻る" id="6">
+                            <connections>
+                                <action selector="OnUserListView:" destination="-1" id="9"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="20"/>
+                        <barButtonItem title="写真一覧の表示" id="21">
+                            <connections>
+                                <action selector="OnPictureListView:" destination="-1" id="35"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="22"/>
+                        <barButtonItem enabled="NO" title="カメラ画面へ" id="23">
+                            <connections>
+                                <action selector="OnCameraView:" destination="-1" id="36"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="26"/>
+                        <barButtonItem enabled="NO" title="履歴詳細の表示" id="24">
+                            <connections>
+                                <action selector="OnHistDetailView:" destination="-1" id="34"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="16" style="plain" systemItem="fixedSpace" id="25"/>
+                    </items>
+                </toolbar>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="14">
+                    <rect key="frame" x="20" y="220" width="728" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <barButtonItem width="15" style="plain" systemItem="fixedSpace" id="19"/>
+                        <barButtonItem style="done" systemItem="compose" id="15">
+                            <connections>
+                                <action selector="OnNewKarteMake:" destination="-1" id="32"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="tMq-cf-2Qy"/>
+                        <barButtonItem style="plain" id="52">
+                            <button key="customView" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="51">
+                                <rect key="frame" x="53" y="0.0" width="442" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="お客様未読:  0件 返信未読:  0件 返信チェック:   0件 送信エラー:  0件">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                        <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="62"/>
+                        <barButtonItem image="toolbar_mail20x20.png" id="70">
+                            <connections>
+                                <action selector="OnWebMailList:" destination="-1" id="71"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="10" style="plain" systemItem="flexibleSpace" id="V2i-rh-HO7"/>
+                        <barButtonItem image="qrcode.png" width="70" id="lcx-3j-Tix">
+                            <connections>
+                                <action selector="OnQRCode:" destination="-1" id="pch-sr-Hcf"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="yqe-us-5uV"/>
+                        <barButtonItem enabled="NO" systemItem="trash" id="16">
+                            <connections>
+                                <action selector="OnDeleteKarte:" destination="-1" id="33"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="17" style="plain" systemItem="fixedSpace" id="18"/>
+                    </items>
+                </toolbar>
+                <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="37">
+                    <rect key="frame" x="20" y="121" width="728" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="45"/>
+                        <barButtonItem title="現在この画面はセキュリティにより保護されています" style="plain" id="44"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="46"/>
+                    </items>
+                </toolbar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="140" sectionHeaderHeight="0.0" sectionFooterHeight="5" id="10">
+                    <rect key="frame" x="20" y="264" width="728" height="744"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <inset key="contentInset" minX="0.0" minY="14" maxX="0.0" maxY="14"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="11"/>
+                        <outlet property="delegate" destination="-1" id="12"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+        </view>
+        <barButtonItem style="plain" systemItem="flexibleSpace" id="66"/>
+    </objects>
+    <resources>
+        <image name="qrcode.png" width="56" height="28"/>
+        <image name="toolbar_mail20x20.png" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserInfoListViewController">
+            <connections>
+                <outlet property="btnAccountLogin" destination="19" id="28"/>
+                <outlet property="btnCameraView" destination="35" id="48"/>
+                <outlet property="btnGojyuonSearch" destination="22" id="30"/>
+                <outlet property="btnHistListView" destination="44" id="49"/>
+                <outlet property="btnMaintenace" destination="39" id="50"/>
+                <outlet property="btnMnuCloudSync" destination="70" id="72"/>
+                <outlet property="btnNewUser" destination="42" id="51"/>
+                <outlet property="btnSearch" destination="34" id="52"/>
+                <outlet property="btnUserInfoDelete" destination="40" id="53"/>
+                <outlet property="btnUserInfoEdit" destination="37" id="54"/>
+                <outlet property="btnUserInfoOprate" destination="67" id="69"/>
+                <outlet property="lblName" destination="63" id="64"/>
+                <outlet property="mySearchBar" destination="20" id="31"/>
+                <outlet property="myTableView" destination="21" id="32"/>
+                <outlet property="view" destination="18" id="29"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="18">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="日本　花子" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="63">
+                    <rect key="frame" x="0.0" y="44" width="320" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="grouped" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="70" sectionHeaderHeight="9" sectionFooterHeight="0.0" id="21">
+                    <rect key="frame" x="0.0" y="44" width="320" height="416"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="26"/>
+                        <outlet property="delegate" destination="-1" id="25"/>
+                    </connections>
+                </tableView>
+                <searchBar contentMode="redraw" barStyle="black" text="" placeholder="お客様の姓を入力  （例：あ、日本、等）" id="20">
+                    <rect key="frame" x="95" y="0.0" width="225" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="27"/>
+                    </connections>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="22">
+                    <rect key="frame" x="0.0" y="6" width="95" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                    <state key="normal" title="▼　検　索" backgroundImage="button_Blank_Blue.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="button_Blank_Blue_Push.png"/>
+                    <state key="highlighted" backgroundImage="button_Blank_Blue_Push.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="OnSerach:" destination="-1" eventType="touchUpInside" id="23"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="70">
+                    <rect key="frame" x="210" y="4" width="110" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                    <state key="normal" title="▼クラウド同期" backgroundImage="button_Blank_Blue.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="button_Blank_Blue_Push.png"/>
+                    <state key="highlighted" backgroundImage="button_Blank_Blue_Push.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="OnBtnMnuCloud:" destination="-1" eventType="touchUpInside" id="73"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="19">
+                    <rect key="frame" x="210" y="6" width="110" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                    <state key="normal" title="▼　ログイン" backgroundImage="button_Blank_Blue.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="OnAccountLogin:" destination="-1" eventType="touchUpInside" id="24"/>
+                    </connections>
+                </button>
+                <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" id="33">
+                    <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem width="4" style="plain" systemItem="fixedSpace" id="38"/>
+                        <barButtonItem title="検索条件" id="34">
+                            <connections>
+                                <action selector="OnSerach:" destination="-1" id="58"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="24" style="plain" systemItem="fixedSpace" id="41"/>
+                        <barButtonItem title="新規お客様" id="42">
+                            <connections>
+                                <action selector="OnNewUer:" destination="-1" id="61"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="12" style="plain" systemItem="fixedSpace" id="43"/>
+                        <barButtonItem enabled="NO" title="お客様情報編集" style="done" id="37">
+                            <connections>
+                                <action selector="OnUserInfoUpadte:" destination="-1" id="62"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="12" style="done" systemItem="fixedSpace" id="45"/>
+                        <barButtonItem enabled="NO" title="お客様情報削除" id="40">
+                            <connections>
+                                <action selector="OnUserInfoDelete:" destination="-1" id="59"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="47"/>
+                        <barButtonItem enabled="NO" title="履歴一覧の表示" id="44">
+                            <connections>
+                                <action selector="OnHistWorkView:" destination="-1" id="56"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="12" style="plain" systemItem="fixedSpace" id="46"/>
+                        <barButtonItem enabled="NO" title="カメラ画面へ" id="35">
+                            <connections>
+                                <action selector="OnCameraView:" destination="-1" id="55"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="36"/>
+                        <barButtonItem title="編集" id="39"/>
+                    </items>
+                </toolbar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="67">
+                    <rect key="frame" x="278" y="44" width="42" height="42"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" title="項目編集" image="wkItem_edit.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="OnUserInfoOprButton:" destination="-1" eventType="touchUpInside" id="68"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button_Blank_Blue.png" width="115" height="42"/>
+        <image name="button_Blank_Blue_Push.png" width="115" height="42"/>
+        <image name="wkItem_edit.png" width="110" height="110"/>
+    </resources>
+</document>

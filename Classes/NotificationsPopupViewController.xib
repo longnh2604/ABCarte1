@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad10_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationsPopupViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="0G5-9c-3HS" id="Tap-bl-Oke"/>
+                <outlet property="tableView" destination="VPg-sn-wBe" id="UOg-Zv-jRG"/>
+                <outlet property="view" destination="uEL-zc-MUF" id="zkf-J4-LJa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="uEL-zc-MUF">
+            <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="0G5-9c-3HS">
+                    <rect key="frame" x="281" y="264" width="20" height="20"/>
+                </activityIndicatorView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="VPg-sn-wBe">
+                    <rect key="frame" x="145" y="43" width="600" height="600"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VPg-sn-wBe" secondAttribute="bottom" id="Ifp-Xg-KFD"/>
+                <constraint firstAttribute="centerX" secondItem="0G5-9c-3HS" secondAttribute="centerX" id="PRs-ar-rpP"/>
+                <constraint firstAttribute="centerY" secondItem="0G5-9c-3HS" secondAttribute="centerY" id="Ylq-97-p4F"/>
+                <constraint firstItem="VPg-sn-wBe" firstAttribute="top" secondItem="uEL-zc-MUF" secondAttribute="top" id="i4T-bu-HLs"/>
+                <constraint firstAttribute="trailing" secondItem="VPg-sn-wBe" secondAttribute="trailing" id="sHV-iK-BFv"/>
+                <constraint firstItem="VPg-sn-wBe" firstAttribute="leading" secondItem="uEL-zc-MUF" secondAttribute="leading" id="tN9-Zd-tuM"/>
+            </constraints>
+            <point key="canvasLocation" x="-39" y="242"/>
+        </view>
+    </objects>
+</document>

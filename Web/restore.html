@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>バックアップファイルをCaLuLuへ転送します</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript">
+    <!--
+        var flag = true;
+    
+        function onFileUpload() {
+           
+           
+            var file = document.getElementById("file");
+            if (file.value.length <= 0) {
+                alert("ファイルを選択してください");
+                return (false);
+            }
+
+            var btn = document.getElementById("button");
+            btn.disabled = true;
+
+            var pnl = document.getElementById("wait_panel");
+            pnl.style.display = "block";
+
+            setTimeout('onFlashTimer()', 1500);
+		
+			return (true);	
+        }
+
+    
+        function onFlashTimer() {
+            var pnl = document.getElementById("wait_panel");
+            pnl.style.display = (flag)? "none" : "block";
+
+            flag = !flag;
+
+            setTimeout('onFlashTimer()', 1500);
+        }
+    -->
+    </script>
+</head>
+<body  style="font-family:Verdana, Chicago, Tahoma; font-size:larger; ">
+    <p style="text-align:center; border:solid 1px black; font-weight:bolder;margin:5px 15px 5px 15px; padding:8px 0px 8px 0px;">
+            パソコン内にあるバックアップファイルをCaLuLuへ転送します</p>
+        <p style="text-align:center; color:Red;border-bottom:solid 1px Red; font-weight:bolder;margin:20px 50px 25px 50px; padding:8px 0px 8px 0px;font-size:medium; ">
+            ご注意：CaLuLuがデバイスに表示されていることを確認してください</p>
+    <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1" onsubmit="return onFileUpload();">
+	<div style="width:78%;"  align="center">
+	    <span>CaLuLuへ転送するファイルを選択してください</span>
+		<input type="file" name="file" id="file">
+	</div>
+	<div style="margin-top:25px; width:78%;"  align="center">
+		<input type="submit" name="button" id="button" value="選択したファイルをCaLuLuへ転送" /> 
+	</div>
+    </form>
+    <p  id="wait_panel"
+        style="color:#009933;border:solid 1px #009933; font-weight:bolder;margin:15px 50px 5px 50px; padding:8px 0px 8px 0px; text-align:center; display:none;" >
+        バックアップファイルを転送中.... （しばらくお待ちください）</p>
+</body>
+</html>

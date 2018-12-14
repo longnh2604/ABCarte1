@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2064" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebMailListViewController">
+            <connections>
+                <outlet property="btnMailDelete" destination="doq-1w-CNI" id="7qE-V8-sEQ"/>
+                <outlet property="catalogButton" destination="164" id="321"/>
+                <outlet property="contentView" destination="18" id="43"/>
+                <outlet property="replyTextView" destination="124" id="140"/>
+                <outlet property="replyTitleView" destination="132" id="141"/>
+                <outlet property="replyView" destination="102" id="139"/>
+                <outlet property="submitButton" destination="39" id="46"/>
+                <outlet property="toolBack" destination="273" id="320"/>
+                <outlet property="toolbar" destination="163" id="318"/>
+                <outlet property="upButton" destination="178" id="OZm-QD-Ur1"/>
+                <outlet property="userStatusLabel" destination="185" id="DBC-aj-M94"/>
+                <outlet property="view" destination="2" id="42"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="728" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="18" customClass="TouchScrollView">
+                    <rect key="frame" x="0.0" y="44" width="728" height="554"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </scrollView>
+                <view autoresizesSubviews="NO" contentMode="scaleToFill" id="102">
+                    <rect key="frame" x="20" y="618" width="688" height="140"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="39">
+                            <rect key="frame" x="622" y="99" width="55" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="送信">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="submit:" destination="-1" eventType="touchUpInside" id="322"/>
+                            </connections>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="124" customClass="UIPlaceHolderTextView">
+                            <rect key="frame" x="14" y="47" width="600" height="85"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <textField opaque="NO" clipsSubviews="YES" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" id="132">
+                            <rect key="frame" x="14" y="9" width="663" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.75686274509999996" green="0.81960784310000001" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="273">
+                    <rect key="frame" x="0.0" y="0.0" width="728" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="163">
+                            <rect key="frame" x="0.0" y="0.0" width="728" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <items>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="2KM-Zu-nCK"/>
+                                <barButtonItem image="toolbar_returnCarute20x20.png" id="180">
+                                    <connections>
+                                        <action selector="back:" destination="-1" id="194"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem width="8" style="plain" systemItem="fixedSpace" id="193"/>
+                                <barButtonItem title="一覧" id="164">
+                                    <connections>
+                                        <action selector="catalog:" destination="-1" id="197"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem image="toolbar_prev_mail20x20.png" id="178">
+                                    <connections>
+                                        <action selector="up:" destination="-1" id="196"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem image="toolbar_next_mail20x20.png" id="179">
+                                    <connections>
+                                        <action selector="down:" destination="-1" id="198"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" id="181"/>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="192"/>
+                                <barButtonItem style="plain" id="185">
+                                    <button key="customView" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="184">
+                                        <rect key="frame" x="199" y="5.5" width="469" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                        <state key="normal" title="お客様未読:000件 返信未読:000件 未対応チェック: 000件 送信エラー:000件">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </barButtonItem>
+                                <barButtonItem systemItem="trash" id="doq-1w-CNI">
+                                    <connections>
+                                        <action selector="trushbox:" destination="-1" id="1dr-9h-eed"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="kgQ-Aw-7Uk"/>
+                            </items>
+                        </toolbar>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="toolbar_next_mail20x20.png" width="20" height="20"/>
+        <image name="toolbar_prev_mail20x20.png" width="20" height="20"/>
+        <image name="toolbar_returnCarute20x20.png" width="20" height="20"/>
+    </resources>
+</document>

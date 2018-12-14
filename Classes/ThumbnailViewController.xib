@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThumbnailViewController">
+            <connections>
+                <outlet property="actIndView" destination="28" id="29"/>
+                <outlet property="btnTrash" destination="9" id="7sB-Eg-G7F"/>
+                <outlet property="btnUserName" destination="25" id="27"/>
+                <outlet property="tlbSecurity" destination="36" id="40"/>
+                <outlet property="toolbarBottom" destination="6" id="Fnb-qo-s27"/>
+                <outlet property="toolbarTop" destination="4" id="pWF-Cd-jWx"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="top" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                    <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <items>
+                        <barButtonItem image="hitogata.png" id="22">
+                            <connections>
+                                <action selector="OnSetUserPicture" destination="-1" id="24"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="23"/>
+                        <barButtonItem systemItem="trash" id="9">
+                            <connections>
+                                <action selector="OnDeleteThubnails" destination="-1" id="35"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="13"/>
+                        <barButtonItem style="plain" systemItem="reply" id="11">
+                            <connections>
+                                <action selector="OnChancel" destination="-1" id="34"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="6">
+                    <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                    <items>
+                        <barButtonItem image="view_back.png" width="60" id="7">
+                            <connections>
+                                <action selector="OnCameraView" destination="-1" id="18"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="26"/>
+                        <barButtonItem enabled="NO" title="　　　　　様" style="plain" id="25">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="17"/>
+                        <barButtonItem image="view_forword.png" width="60" id="15">
+                            <connections>
+                                <action selector="OnSelectPictView" destination="-1" id="19"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <activityIndicatorView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="28">
+                    <rect key="frame" x="365" y="510" width="37" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
+                <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="36">
+                    <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="38"/>
+                        <barButtonItem title="現在この画面はセキュリティにより保護されています" style="plain" id="39"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="37"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="36" firstAttribute="top" secondItem="2" secondAttribute="top" constant="20" id="6u0-Et-Oui"/>
+                <constraint firstAttribute="trailing" secondItem="4" secondAttribute="trailing" id="7yV-Tq-Oso"/>
+                <constraint firstAttribute="trailing" secondItem="36" secondAttribute="trailing" id="Hwv-6X-B5o"/>
+                <constraint firstAttribute="trailing" secondItem="6" secondAttribute="trailing" id="T9S-tc-11C"/>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="fpC-If-oqI"/>
+                <constraint firstItem="36" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="kQS-47-CcN"/>
+                <constraint firstItem="4" firstAttribute="top" secondItem="2" secondAttribute="top" constant="20" id="mfL-sT-Er8"/>
+                <constraint firstItem="6" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="sqP-xo-ANS"/>
+                <constraint firstAttribute="bottom" secondItem="6" secondAttribute="bottom" id="yug-Ga-1wm"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hitogata.png" width="20" height="20"/>
+        <image name="view_back.png" width="20" height="20"/>
+        <image name="view_forword.png" width="20" height="20"/>
+    </resources>
+</document>

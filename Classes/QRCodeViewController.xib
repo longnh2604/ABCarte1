@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QRCodeViewController">
+            <connections>
+                <outlet property="btnQRcodeReturn" destination="hez-oZ-Ygi" id="gz8-PN-G4Q"/>
+                <outlet property="imageBackground" destination="68S-A3-246" id="BxQ-uK-B7F"/>
+                <outlet property="imageQRCodeAuSoftbank" destination="Tmd-Tr-Etc" id="7Fo-oE-NK6"/>
+                <outlet property="imageQRCodeDocomo" destination="Lkt-Qp-qGt" id="hgS-oh-ZWt"/>
+                <outlet property="imageQRCodeSmartPhone" destination="vtc-EV-gFL" id="chU-YH-C88"/>
+                <outlet property="imageQRDefault" destination="woo-bn-yCc" id="poN-Gp-crL"/>
+                <outlet property="naviBar" destination="mHK-GK-k0J" id="nUi-gK-MuS"/>
+                <outlet property="segmentCarrier" destination="e9G-gb-Vlh" id="K09-xE-P96"/>
+                <outlet property="textView" destination="EnJ-9K-q9o" id="Xlf-hf-CuO"/>
+                <outlet property="view" destination="4a7-0J-1V6" id="es7-in-8Up"/>
+                <outlet property="viewBasePanel" destination="O93-fp-iu6" id="bkW-ur-qxh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4a7-0J-1V6">
+            <rect key="frame" x="0.0" y="0.0" width="728" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" id="mHK-GK-k0J">
+                    <rect key="frame" x="0.0" y="0.0" width="728" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="QRコード" id="fIf-Gs-8P4">
+                            <barButtonItem key="leftBarButtonItem" title="　　戻る" id="hez-oZ-Ygi">
+                                <connections>
+                                    <action selector="OnQRCodeReturn:" destination="-1" id="dfB-5q-EVt"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="qDU-eo-UZt"/>
+                    </connections>
+                </navigationBar>
+                <view contentMode="scaleToFill" id="O93-fp-iu6">
+                    <rect key="frame" x="0.0" y="44" width="728" height="724"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="68S-A3-246">
+                            <rect key="frame" x="0.0" y="0.0" width="728" height="724"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="vtc-EV-gFL">
+                            <rect key="frame" x="244" y="190" width="240" height="240"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Lkt-Qp-qGt">
+                            <rect key="frame" x="244" y="190" width="240" height="240"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Tmd-Tr-Etc">
+                            <rect key="frame" x="244" y="190" width="240" height="240"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="woo-bn-yCc">
+                            <rect key="frame" x="244" y="190" width="240" height="240"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" id="EnJ-9K-q9o">
+                            <rect key="frame" x="20" y="540" width="688" height="164"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <attributedString key="attributedText"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="e9G-gb-Vlh">
+                            <rect key="frame" x="127" y="86" width="475" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="スマートフォン"/>
+                                <segment title="docomo携帯端末"/>
+                                <segment title="au、softbank携帯端末"/>
+                            </segments>
+                            <connections>
+                                <action selector="OnSelectCarrier:" destination="-1" eventType="valueChanged" id="neU-oD-Fmj"/>
+                            </connections>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" red="0.81122448979999995" green="0.81122448979999995" blue="0.81122448979999995" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

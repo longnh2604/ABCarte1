@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationDetailViewController">
+            <connections>
+                <outlet property="bodyTextView" destination="Mth-3s-7tc" id="axO-Iv-ps7"/>
+                <outlet property="dateLabel" destination="o2D-F6-oWT" id="cam-zO-fHf"/>
+                <outlet property="titleLabel" destination="pT3-3X-nya" id="9zt-ms-bNy"/>
+                <outlet property="view" destination="pen-sg-CkY" id="pyC-fW-3ge"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="pen-sg-CkY">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pT3-3X-nya">
+                    <rect key="frame" x="30" y="0.0" width="708" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016/03/29 17:38" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2D-F6-oWT">
+                    <rect key="frame" x="30" y="31" width="708" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mth-3s-7tc">
+                    <rect key="frame" x="30" y="62" width="708" height="932"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pT3-3X-nya" firstAttribute="top" secondItem="pen-sg-CkY" secondAttribute="top" id="4Pk-sB-c49"/>
+                <constraint firstAttribute="trailing" secondItem="Mth-3s-7tc" secondAttribute="trailing" constant="30" id="ERP-EU-bi7"/>
+                <constraint firstItem="Mth-3s-7tc" firstAttribute="top" secondItem="o2D-F6-oWT" secondAttribute="bottom" constant="10" id="MYz-MQ-d8e"/>
+                <constraint firstItem="pT3-3X-nya" firstAttribute="leading" secondItem="pen-sg-CkY" secondAttribute="leading" constant="30" id="Ntq-oO-Gnf"/>
+                <constraint firstAttribute="bottom" secondItem="Mth-3s-7tc" secondAttribute="bottom" constant="30" id="X9M-v0-t3o"/>
+                <constraint firstItem="o2D-F6-oWT" firstAttribute="top" secondItem="pT3-3X-nya" secondAttribute="bottom" constant="10" id="dNT-Tf-HAK"/>
+                <constraint firstAttribute="trailing" secondItem="pT3-3X-nya" secondAttribute="trailing" constant="30" id="fLc-gf-bn4"/>
+                <constraint firstItem="o2D-F6-oWT" firstAttribute="leading" secondItem="pen-sg-CkY" secondAttribute="leading" constant="30" id="jfV-ju-czx"/>
+                <constraint firstItem="Mth-3s-7tc" firstAttribute="leading" secondItem="pen-sg-CkY" secondAttribute="leading" constant="30" id="qhv-ty-qyI"/>
+                <constraint firstAttribute="trailing" secondItem="o2D-F6-oWT" secondAttribute="trailing" constant="30" id="xKH-Ul-NyJ"/>
+            </constraints>
+            <point key="canvasLocation" x="220" y="315"/>
+        </view>
+    </objects>
+</document>
